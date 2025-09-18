@@ -1,0 +1,21 @@
+
+#banner {
+  height: 500px;
+  background-image: 
+    radial-gradient(circle at center, transparent, #103056),
+    url('/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+#banner .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--verde);
+  color: var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}

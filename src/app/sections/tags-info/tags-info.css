@@ -1,0 +1,7 @@
+.btn-tag {
+  width: 300px;
+}
+.btn-tag:hover {
+  background-color: var(--azul);
+  width: 300px;
+}

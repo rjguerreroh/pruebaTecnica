@@ -1,0 +1,8 @@
+<section id="cards" class="mx-10 md:mx-auto max-w-screen-xl py-4">
+  <h1 class="font-bold py-5 text-center text-3xl">Aenean facilisis, enim eu bibendum sagittis</h1>
+  <div class="sm:w-5/6  grid grid-cols-1 sm:grid-cols-3 gap-4 mx-auto">
+    @for (card of cards; track $index) {
+      <app-card [title]="card.title" [description]="card.description" [img]="card.img"></app-card>
+    }
+  </div>
+</section>

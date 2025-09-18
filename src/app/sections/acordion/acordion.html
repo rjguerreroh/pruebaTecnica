@@ -1,0 +1,27 @@
+<div class="max-w-4xl mx-5 md:mx-20 lg:mx-auto py-8">
+  <h2 class="text-3xl font-bold mb-6">Lorem ipsum dolor sit amet</h2>
+
+  <div *ngFor="let item of items; let i = index" class="mb-3 border rounded-lg overflow-hidden">
+    <!-- Header -->
+    <button
+      class="w-full flex justify-between items-center px-5 py-3 text-left font-medium transition 
+             bg-teal-300 hover:bg-teal-400"
+      (click)="toggleItem(i)"
+      [ngClass]="{'bg-teal-200': item.open}">
+      <span>{{ item.question }}</span>
+      <span class="ml-2">
+        <svg *ngIf="!item.open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+        <svg *ngIf="item.open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+        </svg>
+      </span>
+    </button>
+
+    <!-- Content -->
+    <div *ngIf="item.open" class="px-5 py-4 bg-white text-gray-700">
+      {{ item.answer }}
+    </div>
+  </div>
+</div>

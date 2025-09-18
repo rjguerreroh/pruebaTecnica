@@ -1,1 +1,113 @@
+@import "tailwindcss";
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --verde: #29E3CC;
+  --azul: #001C48;
+  --azul-hover: #000F26;
+  --celeste: #E9F9F7;
+  --gris: #F5F5F5;
+  --blanco: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--gris);
+  color: var(--azul);
+}
+
+
+
+.btn-secundary {
+  background: var(--verde);
+  color: var(--azul);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn-secundary:hover {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+
+.btn-white {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--blanco);
+  color: var(--azul);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+
+
+/* INFO GRID */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: var(--celeste);
+  padding: 2rem;
+}
+.info-item {
+  background: var(--blanco);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.form-section {
+  padding: 2rem;
+  background: var(--blanco);
+}
+.form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+.form input, .form select {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form .btn {
+  background: var(--verde);
+  color: var(--azul);
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form .btn:hover {
+  background: var(--azul);
+  color: var(--blanco);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--azul);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+/* HEADER */
+.header {
+  background: var(--verde);
+}
+
+.header .logo {
+  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+}
+
+.header .logo .text {
+  color: var(--azul);
+  font-weight: bold;
+}
+
+.header .nav a {
+  text-decoration: none;
+}
+
+
+.servicios .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.controles .btn {
+  display: inline-block;
+  background: var(--blanco);
+  color: var(--azul);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.controles .btn:hover {
+  background: rgb(160, 160, 160);
+}

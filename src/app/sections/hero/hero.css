@@ -1,0 +1,25 @@
+#hero {
+  height: 500px;
+  background-image: 
+    linear-gradient(to right, #103056, transparent),
+    url('/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--blanco);
+  color: var(--azul);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#hero .btn:hover {
+  background: var(--verde);
+  color: var(--balnco);
+  transition: 0.3s;
+}
