@@ -1,22 +1,33 @@
-<header class="header">
-  <nav class="border-gray-200 px-4 lg:px-6 py-2.5">
-    <div class="flex justify-between items-center mx-auto max-w-screen-xl">
-      <a href="https://flowbite.com" class="flex items-center">
-        <logo [width]="50" [height]="50" />
-        <span class="self-center text-xl font-semibold whitespace-nowrap text-primary ml-2">LogoIpsum</span>
+<header id="header" class="fixed top-0 left-0 w-full z-50 bg-secondary-500 shadow">
+  <nav class="px-4 lg:px-6 py-3">
+    <div class="flex justify-between items-center max-w-screen-xl mx-auto">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2">
+        <logo [width]="50" [height]="50"></logo>
+        <span class="text-xl font-semibold text-primary">LogoIpsum</span>
       </a>
-      <div class="flex">
-        <div class="servicios hidden md:block">
-          <a class="btn mr-2 flex items-center" href="#hero"><group-ico /><span class="ml-2">Inicio</span></a>
-          <a class="btn mr-2" href="#services"><money-ico /><span class="ml-2">Servicios</span></a>
-          <a class="btn mr-2" href="#contact"><group-ico /><span class="ml-2">Contacto</span></a>
-        </div>
 
-        <div class="controles flex md:hidden">
-          <!-- <a class="btn mx-2"><search-ico /></a> -->
-          <a class="btn mx-2"><menu-ico /></a>
-        </div>
+      <!-- Links Desktop -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#hero" class="flex items-center bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition">
+          <group-ico class="mr-2"></group-ico> Inicio
+        </a>
+        <a href="#services" class="flex items-center bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition">
+          <group-ico class="mr-2"></group-ico> Servicios
+        </a>
+        <a href="#contact" class="flex items-center bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition">
+          <group-ico class="mr-2"></group-ico> Contacto
+        </a>
+      </div>
 
+      <!-- Controles Mobile -->
+      <div class="flex md:hidden items-center gap-2">
+        <button class="p-2 rounded-lg bg-neutral-500 hover:bg-neutral-600 border-2 border-gray-700 transition">
+          <search-ico [width]="20" [height]="20"></search-ico>
+        </button>
+        <button class="p-2 rounded-lg bg-neutral-500 hover:bg-neutral-600 border-2 border-gray-700 transition">
+          <menu-ico [width]="20" [height]="20"></menu-ico>
+        </button>
       </div>
     </div>
   </nav>

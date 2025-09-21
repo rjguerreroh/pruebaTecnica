@@ -5,21 +5,6 @@
     url('/img/hero.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
-#hero .btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: var(--blanco);
-  color: var(--azul);
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-#hero .btn:hover {
-  background: var(--verde);
-  color: var(--balnco);
-  transition: 0.3s;
-}

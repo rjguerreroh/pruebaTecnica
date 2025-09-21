@@ -13,5 +13,6 @@ import { MoneyIco } from '../../shared/icons/money';
   styleUrl: './header.css'
 })
 export class Header {
+  
 
 }

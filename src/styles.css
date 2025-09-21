@@ -1,8 +1,60 @@
 @import "tailwindcss";
+@theme {
+  /* Primary - Azul oscuro */
+  --color-primary-50: #e6ebf2;
+  --color-primary-100: #ccd7e6;
+  --color-primary-200: #99afcc;
+  --color-primary-300: #6687b3;
+  --color-primary-400: #335f99;
+  --color-primary-500: #001C48; /* Base */
+  --color-primary-600: #00173b;
+  --color-primary-700: #00122d;
+  --color-primary-800: #000c20;
+  --color-primary-900: #000610;
+  --color-primary-950: #000308;
+
+  /* Secondary - Verde agua */
+  --color-secondary-50: #e6fcf9;
+  --color-secondary-100: #ccf9f3;
+  --color-secondary-200: #99f3e7;
+  --color-secondary-300: #66eedc;
+  --color-secondary-400: #33e9d0;
+  --color-secondary-500: #29E3CC; /* Base */
+  --color-secondary-600: #20b6a3;
+  --color-secondary-700: #19897b;
+  --color-secondary-800: #115c52;
+  --color-secondary-900: #0a2e29;
+  --color-secondary-950: #051714;
+
+  /* Tertiary - Fondo claro */
+  --color-tertiary-50: #ffffff;
+  --color-tertiary-100: #fdfefe;
+  --color-tertiary-200: #fafdfe;
+  --color-tertiary-300: #f6fcfc;
+  --color-tertiary-400: #f3fbfb;
+  --color-tertiary-500: #E9F9F7; /* Base */
+  --color-tertiary-600: #baccc9;
+  --color-tertiary-700: #8c9e9b;
+  --color-tertiary-800: #5d6f6c;
+  --color-tertiary-900: #2f3736;
+  --color-tertiary-950: #181c1b;
+
+  /* Neutral - Gris muy claro */
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #fdfdfd;
+  --color-neutral-200: #fbfbfb;
+  --color-neutral-300: #f9f9f9;
+  --color-neutral-400: #f7f7f7;
+  --color-neutral-500: #F5F5F5; /* Base */
+  --color-neutral-600: #c4c4c4;
+  --color-neutral-700: #939393;
+  --color-neutral-800: #626262;
+  --color-neutral-900: #313131;
+  --color-neutral-950: #181818;
+}
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 :root {
   --verde: #29E3CC;
   --azul: #001C48;
