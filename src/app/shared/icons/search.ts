@@ -11,5 +11,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SearchIco {
   @Input() height: number = 16;
-  @Input() width: number = 24
+  @Input() width: number = 16;
 }

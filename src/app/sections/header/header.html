@@ -1,34 +1,53 @@
-<header id="header" class="fixed top-0 left-0 w-full z-50 bg-secondary-500 shadow">
+<header class="fixed top-0 left-0 w-full z-50 bg-secondary-500 shadow">
   <nav class="px-4 lg:px-6 py-3">
     <div class="flex justify-between items-center max-w-screen-xl mx-auto">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2">
-        <logo [width]="50" [height]="50"></logo>
-        <span class="text-xl font-semibold text-primary">LogoIpsum</span>
+        <!-- Asume que aquí tienes un SVG o componente para el logo -->
+         <logo></logo>
+        <span class="text-xl font-semibold text-white">LogoIpsum</span>
       </a>
 
-      <!-- Links Desktop -->
+      <!-- Desktop nav -->
       <div class="hidden md:flex items-center gap-4">
-        <a href="#hero" class="flex items-center bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition">
-          <group-ico class="mr-2"></group-ico> Inicio
-        </a>
-        <a href="#services" class="flex items-center bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition">
-          <group-ico class="mr-2"></group-ico> Servicios
-        </a>
-        <a href="#contact" class="flex items-center bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition">
-          <group-ico class="mr-2"></group-ico> Contacto
-        </a>
+        <a href="#hero" class="bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition"><group-ico></group-ico> Inicio</a>
+        <a href="#services" class="bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition"><money-ico></money-ico> Servicios</a>
+        <a href="#contact" class="bg-primary-500 hover:bg-primary-400 text-white font-medium py-2 px-4 rounded transition"><group-ico></group-ico> Contacto</a>
       </div>
 
-      <!-- Controles Mobile -->
-      <div class="flex md:hidden items-center gap-2">
-        <button class="p-2 rounded-lg bg-neutral-500 hover:bg-neutral-600 border-2 border-gray-700 transition">
-          <search-ico [width]="20" [height]="20"></search-ico>
+      <!-- Botón hamburguesa móvil -->
+      <div class="md:hidden flex gap-2">
+        <button class="cursor-pointer bg-neutral-300 font-medium py-3 px-4 rounded border-2 border-primary-500 transition">
+            <search-ico></search-ico>
         </button>
-        <button class="p-2 rounded-lg bg-neutral-500 hover:bg-neutral-600 border-2 border-gray-700 transition">
-          <menu-ico [width]="20" [height]="20"></menu-ico>
-        </button>
+        <label for="menu-toggle" class="cursor-pointer bg-neutral-300 font-medium py-3 px-4 rounded border-2 border-primary-500 transition">
+            <menu-ico></menu-ico>
+        </label>
       </div>
     </div>
   </nav>
+
+  <!-- Checkbox oculto -->
+  <input type="checkbox" id="menu-toggle" class="hidden" />
+
+  <!-- Menú móvil full screen -->
+  <div class="mobile-menu">
+    <label for="menu-toggle" class="close-btn">
+      ✕
+    </label>
+
+    <div class="mobile-link-container flex flex-col justify-center items-center gap-8">
+        <!-- Para cerrar el menú al hacer clic en un enlace, cada enlace está ahora envuelto en una etiqueta (label) 
+        que está vinculada al checkbox del menú. Esto permite que el menú se oculte automáticamente. -->
+        <label for="menu-toggle">
+          <a href="#hero">Inicio</a>
+        </label>
+        <label for="menu-toggle">
+          <a href="#services">Servicios</a>
+        </label>
+        <label for="menu-toggle">
+          <a href="#contact">Contacto</a>
+        </label>
+    </div>
+  </div>
 </header>

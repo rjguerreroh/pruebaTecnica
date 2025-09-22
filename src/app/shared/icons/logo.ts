@@ -9,6 +9,6 @@ import { Component, Input } from '@angular/core';
 `,
 })
 export class Logo {
-  @Input() height!:number;
-  @Input() width!:number;
+  @Input() height:number = 54;
+  @Input() width:number = 54;
 }

@@ -1,44 +1,69 @@
-<section id="footer">
-  <div class="w-full">
-    <div class="md:flex md:justify-between md:w-5/6 sm:mx-auto p-10">
-        <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com" class="flex items-center"><logo-light-ico></logo-light-ico>
-                <span class="self-center text-2xl font-semibold whitespace-nowrap ml-4">Logoipsum</span>
-            </a>
-            <div class="my-5">
-                <p class="text-left font-thin"> Cras sem odio, malesuada id diam id, tempus accumsan turpis. </p>
-              </div>
-              <p class="text-left">Follow us</p>
-            <div class="flex gap-2">
-              <facebook-ico></facebook-ico>
-              <tiktok-ico></tiktok-ico>
-              <instagram-ico></instagram-ico>
-              <youtube-ico></youtube-ico>
-              <linkding-ico></linkding-ico>
-            </div>
-        </div>
-        <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div class="text-left col-span-1">
-              <p class="font-light">Contacto us</p>
-              <p class="flex gap-2"><whatsapp-ico></whatsapp-ico><span>+57 312 345 6789</span></p>
-              <p class="flex gap-2"><contact-ico></contact-ico><span>01 8000 12 34 56</span></p>
-              <p class="flex gap-2"><contact-ico></contact-ico><span>01 8000 12 34 56</span></p>
-          </div>
-          <div class="text-left col-span-1">
-              <p class="font-light">Legal</p>
-              <p class="flex">Terms y Conditions</p>
-              <p class="flex">Data Policy</p>
-              <p class="flex">Cookies Policy</p>
-          </div>
-        </div>
+<section id="footer" class="bg-gray-800 text-white py-12 px-4 md:px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <div class="flex flex-col items-start md:items-start md:col-span-1">
+      <a href="#" class="flex items-center mb-4">
+        <logo-light-ico></logo-light-ico>
+        <span class="ml-3 text-2xl font-bold tracking-tight">Logoipsum</span>
+      </a>
+      <p class="text-sm text-gray-400 mb-6 font-light">
+        Cras sem odio, malesuada id diam id, tempus accumsan turpis.
+      </p>
+      <p class="text-gray-400 mb-3 font-semibold">Follow us</p>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          <facebook-ico></facebook-ico>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          <tiktok-ico></tiktok-ico>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          <instagram-ico></instagram-ico>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          <youtube-ico></youtube-ico>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+          <linkding-ico></linkding-ico>
+        </a>
+      </div>
     </div>
-    <div class="w-full sm:flex sm:items-center sm:justify-between p-6" style="background-color:#E5E5E5;">
-        <span class="text-sm text-black sm:text-center sm:w-1/2 p-2 font-medium">
-          Logo Ipsum - Todos los derechos reservados.
-        </span>
-        <div class="flex mt-4 text-gray-600 sm:justify-center sm:mt-0 text-justify p-2">
-          Maecenas ex augue, ullamcorper in libero fringilla, pretium faucibus nisi. Aenean maximus sagittis ipsum, at sagittis risus vulputate et. Cras sem odio, malesuada id diam id, tempus accumsan turpis
-        </div>
+    
+    <div class="md:col-span-1 lg:col-start-3">
+      <h3 class="text-lg font-semibold mb-4">Contact us</h3>
+      <ul class="space-y-3 text-gray-400 font-light text-sm">
+        <li class="flex items-center">
+          <contact-ico></contact-ico>
+          <span class="ml-2">+57 312 345 6789</span>
+        </li>
+        <li class="flex items-center">
+          <contact-ico></contact-ico>
+          <span class="ml-2">01 8000 12 34 56</span>
+        </li>
+        <li class="flex items-center">
+          <contact-ico></contact-ico>
+          <span class="ml-2">01 8000 12 34 56</span>
+        </li>
+      </ul>
     </div>
+    
+    <div class="md:col-span-1 lg:col-start-4">
+      <h3 class="text-lg font-semibold mb-4">Legal</h3>
+      <ul class="space-y-3 text-gray-400 font-light text-sm">
+        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:underline">Data Policy</a></li>
+        <li><a href="#" class="hover:underline">Cookies Policy</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  <hr class="my-8 border-gray-700">
+  
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left text-sm text-gray-400">
+    <p class="mb-4 md:mb-0">© 2024 Logo Ipsum. All Rights Reserved.</p>
+    <p class="font-light max-w-lg">
+      Maecenas ex augue, ullamcorper in libero fringilla, pretium faucibus nisi. Aenean maximus sagittis ipsum, at sagittis risus vulputate et.
+    </p>
   </div>
 </section>
